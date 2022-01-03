@@ -1,0 +1,46 @@
+<!-- Contenedor -->
+        <div class="w3-display-container w3-padding-64 w3-content" style="max-width:1300px;min-height:500px;" >
+            <hr><hr>
+            <!-- Título tipo 1 -->
+            <h1>Contáctenos</h1>
+            <!-- Párrafo en texto en negrita – con color a elección -->
+            <p class="w3-text-blue-gray w3-large"><b>Jotabeche #809</b></p>
+            <!-- 2do párrafo complementario -->
+            <p>También puede contactarnos por teléfono +56 9 3651 0129
+                o puede enviarnos un mensaje aquí:
+            </p>
+            <!-- Formulario -->
+            <!-- https://formsubmit.co/sugmail -->
+            <form action="https://formsubmit.co/ejemplos.jsg@gmail.com" method="POST" >
+                <!-- Plantilla Tabla -->
+                <input type="hidden" name="_template" value="table">
+                <!-- Definir lista desplegable -->
+                <select class="w3-input w3-padding-16"  name="Tipo Consulta" id="Tipo_Consulta" >
+                    <!-- Opciones de la lista -->
+                    <option value="Escoge tu tipo de consulta">Escoge tu tipo de consulta</option>
+                    <option value="Consulta General">Consulta General</option>
+                    <option value="">Consulta sobre Producto</option>
+                    <option value="">Reclamos</option>
+                    <option value="">Sugerencias</option>
+                </select>
+                <!-- Campo de entrada para ingresar datos tipo - text -->
+                <input class="w3-input w3-padding-16" type="text" placeholder="Nombre" required name="Nombre" >
+                <!-- Campo de entrada para ingresar datos tipo - email -->
+                <input class="w3-input w3-padding-16" type="email" placeholder="Correo Electrónico" required name="Correo">
+                <!-- Campo de entrada para seleccionar datos tipo - datetime-local  -->
+                <input class="w3-input w3-padding-16" type="datetime-local" placeholder="Fecha - Tiempo" required name="Fecha_Hora">
+                <!-- Insertar un área de texto -->
+                <textarea
+                    class="w3-input w3-padding-16" placeholder="Mensaje" required name="Mensaje" > 
+                </textarea>
+                <!-- captcha desabilitado -->
+                <input type="hidden" name="_captcha" value="false">
+                <!-- URL alternativa opcionalmente pueden crear una pestaña de que "Se a enviado el mensaje con éxito" -->
+                <input type="hidden" name="_next" value="http://localhost:8383/Sushis/contactenos.html">
+                <br>
+                <!-- Definir un botón para enviar formulario -->
+                <button
+                    class="w3-button w3-blue-grey w3-section-blue-grey">Enviar Mensaje 
+                </button>  
+            </form>      
+        </div>
